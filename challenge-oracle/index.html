@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Codificador</title>
+  </head>
+  <body>
+    <header>
+        <div class="header-bar">
+          <div class="site-title"><img src="assets/images/Logo.png" alt="Logo da Alura"></div>
+        </div>
+      </header>
+    <section>
+      <div class="text-boxes">
+        <textarea id="inputText" rows="20" cols="35" placeholder="Digite seu texto"></textarea>
+        <div class="resultPanel">
+          <div id="noMessage">
+            <img src="assets/images/GarotaLupa.svg" alt="Uma pessoa segurando a lupa" id="searchGirl"><br><br><br>
+            <div class="message"><b>Mensagem não encontrada</b><br>Texto que você deseja criptografar ou descriptografar.</div>
+          </div>
+          <div id="withMessage" style="visibility:hidden">
+            <textarea id="resultText"></textarea>
+            <button id="copyButton" onclick="copyText()">COPIAR</button>
+          </div>
+      </div>
+      <div class="actionButtons">
+        <button class="encodeButton" onclick="encode()">Codificar</button>
+        <button class="decodeButton" onclick="decode()">Decodificar</button>
+      </div>
+    </section>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
